@@ -11,9 +11,11 @@ const colorBtn = document.getElementById('buttonTest');
 const colors = ['yellow', 'green', 'red', 'dodgerblue', 'white'];
 
 function changeColor(){
-  for(i = 1; i < colors.length; i++){
+  //Math Floor = round number down and return an integer
+  //Math Random = Return a Range from 0-1 (not including 1)
+  let random = Math.floor(Math.random()*colors.length);
 
-  }
+  mainBody.style.backgroundColor = colors[random];
 }
 
 colorBtn.addEventListener('click', changeColor);
