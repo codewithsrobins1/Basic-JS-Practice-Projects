@@ -11,7 +11,9 @@ const colorBtn = document.getElementById('buttonTest');
 const colors = ['yellow', 'green', 'red', 'dodgerblue', 'white'];
 
 function changeColor(){
-  
+  for(i = 1; i < colors.length; i++){
+
+  }
 }
 
 colorBtn.addEventListener('click', changeColor);
