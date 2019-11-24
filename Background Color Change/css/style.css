@@ -1,0 +1,26 @@
+body{
+  min-height: 100vh; /* Min Height should be half the screen */
+  display: flex;
+  justify-content: center; /* Horizontal Control */
+  align-items: center; /* Vertical Control */
+  background-color: dodgerblue;
+}
+
+#buttonTest{
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #fff;
+  transition: .5s;
+  font-size: 1.1em;
+}
+
+#buttonTest:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+.changeColor{
+  background-color: yellow;
+}
