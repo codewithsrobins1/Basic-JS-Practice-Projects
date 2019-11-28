@@ -1,0 +1,8 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('img/mainBackground.jpg') center/cover
+  no-repeat;
+}

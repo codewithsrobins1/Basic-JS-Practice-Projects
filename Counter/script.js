@@ -19,6 +19,11 @@ function raiseCount(){
   else if (count === 0){
     counter.style.color = 'black'
   }
+
+  counter.animate(
+    [{opacity: '0.4'},{opacity: '1.0'}], //Start and End of Opacity
+    {duration: 1000, fill: 'forwards'} //Go to state where animate finishes; not start
+  )
 };
 
 //Subtract from the Count
@@ -32,4 +37,8 @@ function decreaseCount(){
   else if (count === 0){
     counter.style.color = 'black'
   }
+  counter.animate(
+    [{opacity: '0.4'},{opacity: '1.0'}], //Start and End of Opacity
+    {duration: 800, fill: 'forwards'} //Go to state where animate finishes; not start
+  )
 };
