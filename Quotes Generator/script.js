@@ -1,11 +1,11 @@
 const quoteBtn = document.getElementById('quoteBtn');
 const quoteDisplay = document.getElementById('quote')
-const quoteAuth = document.getElementsByClassName('person')
+const quoteAuth = document.getElementById('person')
 
 const simpleQuotes = [
   {
     name: 'Gandhi',
-    quote: 'Be the Change...'
+    quote: 'Be the change you want to see in the world'
   },
   {
     name: 'Kawhi',
@@ -17,8 +17,23 @@ const simpleQuotes = [
   }
 ];
 
-//Change id Quote to Quote from the SimpleQuotes Array
+function changeQte() {
+    let namePlaceholder = "";
+    let quotePlaceholder = "";
 
-//Change Person to the Author of the Quote
+  //Generate a random number from 0-2
+  for(let i = 0; i < simpleQuotes.length; i++) {
+    let randomNum = Math.floor(Math.random() * simpleQuotes.length)
 
-//Create Event Listener for the Button
+    //After selecting, grab the name and quote
+    namePlaceholder = simpleQuotes[randomNum].name;
+    quotePlaceholder = simpleQuotes[randomNum].quote;
+  }
+
+
+  //take values and apply to quote and person IDs
+  quoteDisplay.innerHTML = quotePlaceholder;
+  quoteAuth.innerHTML = namePlaceholder;
+}
+
+quoteBtn.addEventListener('click', changeQte);

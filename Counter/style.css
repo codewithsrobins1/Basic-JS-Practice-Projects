@@ -1,0 +1,51 @@
+body{
+  min-height: 100vh; /* Min Height should be half the screen */
+  display: flex;
+  justify-content: center; /* Horizontal Control */
+  align-items: center; /* Vertical Control */
+  background-color: #fff;
+  font-family: 'calibri', 'sans-serif'
+}
+
+.counter-box {
+  border: 5px solid dodgerblue;
+  padding: 50px 300px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.counter-box h1 {
+  text-transform: uppercase;
+}
+
+.counter {
+  font-size: 4em;
+}
+
+#btns button{
+  padding: 1.2em;
+  margin: 10px;
+  font-size: 1.1em;
+  background-color: dodgerblue;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+#btns button:hover {
+  color: dodgerblue;
+  border: 2px solid dodgerblue;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.color-red{
+  color: red;
+  font-weight: 600;
+}
+
+.color-green{
+  color: green;
+  font-weight: 600;
+}

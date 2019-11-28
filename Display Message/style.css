@@ -18,7 +18,13 @@ body{
   text-transform: uppercase;
 }
 
-#quoteBtn {
+#msgInput{
+  width: 20em;
+  height: 2em;
+  margin: 2em 0px;
+}
+
+#msgBtn {
   padding: 10px;
   background-color: #fff;
   font-size: 1.1rem;
@@ -28,24 +34,23 @@ body{
   transition: .5s;
   border: 2px solid green;
   margin: 15px auto;
+  width: 10em;
 }
 
-#quoteBtn:hover{
+#msgBtn:hover{
   background-color: green;
   color: #fff;
   cursor: pointer;
 }
 
-#quote {
-  font-size: 1.3em;
-  font-weight: bold;
-  background: #f9f9f9;
-  border-left: 10px solid green;
-  padding: 0.5rem;
-}
-
-#person {
+#msgDelivered {
   font-size: 1.3em;
   color: green;
+  font-weight: 600;
+}
+
+#hiddenMessage{
+  color: red;
+  font-size: 1.6em;
   font-weight: 600;
 }
