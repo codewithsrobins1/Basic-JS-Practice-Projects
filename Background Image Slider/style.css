@@ -6,3 +6,48 @@ body{
   background: url('img/mainBackground.jpg') center/cover
   no-repeat;
 }
+
+.images {
+  background: red;
+  flex: 0 0 80%;
+  min-height: 70vh;
+  background: url('img/bcg-1.jpg') center/cover
+  no-repeat;
+  border-radius: 25px;
+  box-shadow: 5px 10px black;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  background: dodgerblue;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  box-shadow: 2px 5px black;
+  outline: none;
+  transition: .5s;
+}
+
+.btn:hover {
+  color: dodgerblue;
+  background: #fff;
+  cursor: pointer;
+}
+
+.prevBtn{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%); /* moving 50% from the top and to the side from it's own value */
+}
+
+.nextBtn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%); /* (left right, top bottom) */
+}
