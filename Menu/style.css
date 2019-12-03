@@ -1,0 +1,81 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar__header img{
+  width: 200px;
+  height: 200px;
+}
+
+.navbar__header {
+  background: #545454;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.3rem solid #6baa75;
+}
+
+.navbar__btn{
+  align-self: center; /*Align the Button in the Center */
+  border: 5px solid #6baa75;
+  cursor: pointer;
+}
+
+/* Add Animation For When Button Is Pressed */
+.change .bar1{
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2{
+  opacity: 0;
+}
+.change .bar3{
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+/*************************************************/
+
+.bar1, .bar2, .bar3{ /* Add the 3 Lines */
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #6baa75;
+  transition: all 2s ease;
+}
+
+.navbar__links{
+  list-style-type: none;
+  transition: all 2s ease;
+  height: 0; /* Makes the Nav Bar go Away Initially */
+  overflow: hidden;
+}
+
+.navbar__collapse{ /* Add this class to make Links Appear */
+  height: 235px;
+}
+
+
+.navbar__single-link{
+  display: block;
+  background: #69747c;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #6baa75;
+  transition: all 2s ease;
+  cursor: pointer;
+}
+
+.navbar__single-link i{
+  padding-right: .5rem;
+}
+
+.navbar__single-link:hover{
+  padding-left: 1.5rem;
+}
+
+header{
+  min-height: calc(100vh - 91.8px);
+  background: url("img/background.jpg") center/cover no-repeat;
+}
